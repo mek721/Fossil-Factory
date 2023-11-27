@@ -21,9 +21,10 @@ public class CameraScript : MonoBehaviour
     {
         // Clamps camera between two variables 
 
-        Vector2 position = transform.position;
+        Vector3 position = transform.position;
         position.x = Mathf.Clamp(position.x, -_borderX, _borderX);
         position.y = Mathf.Clamp(position.y, -_borderY, _borderY);
+        position.z = -10f;
         transform.position = position;
 
 
