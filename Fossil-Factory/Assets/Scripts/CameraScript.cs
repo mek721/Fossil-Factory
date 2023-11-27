@@ -4,37 +4,28 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    // Floats
+    public float moveSpeed = 5f;
+    public float minX = -10f;
+    public float maxX = 10f;
+    public float minY = -5f;
+    public float maxY = 5f;
 
-    public float _borderY;
-    public float _borderX;
-    public float _speed;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        // Clamps camera between two variables 
+        MoveCamera();
+    }
 
-        Vector3 position = transform.position;
-        position.x = Mathf.Clamp(position.x, -_borderX, _borderX);
-        position.y = Mathf.Clamp(position.y, -_borderY, _borderY);
-        position.z = -10f;
-        transform.position = position;
+    void MoveCamera()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
 
+        Vector3 moveDirection = new Vector3(horizontalInput, verticalInput, 0);
+        transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
 
-        // Moves Camera based on two values
-
-        float Horizontal = Input.GetAxis("Horizontal");
-        float Vertical = Input.GetAxis("Vertical");
-
-        transform.Translate(Vector2.right * Horizontal * _speed * Time.deltaTime);
-        transform.Translate(Vector2.up * Vertical * _speed * Time.deltaTime);
-
+        // Clamp the camera position to stay within the specified borders
+        float clampedX = Mathf.Clamp(transform.position.x, minX, maxX);
+        float clampedY = Mathf.Clamp(transform.position.y, minY, maxY);
+        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
     }
 }
