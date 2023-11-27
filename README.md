@@ -16,10 +16,10 @@ Fossil Factory is a 2D strategy and simulation game where players create and sel
 4. **Upgrade and Expand:** Reinvest your earnings to upgrade your factory and expand your business.
 
 ## System Requirements
-- **OS:** [Your Game's OS Requirements]
-- **Processor:** [Processor Requirements]
-- **Memory:** [RAM Requirements]
-- **Graphics:** [Graphics Requirements]
+- **OS:** Windows 10/11
+- **Processor:** Intel i3
+- **Memory:** 1GB Ram
+- **Graphics:** 1GB Vram
 
 ## Installation
 1. Download the game from [Game Download Link].
@@ -27,11 +27,11 @@ Fossil Factory is a 2D strategy and simulation game where players create and sel
 3. Launch the game and start building your Fossil Factory!
 
 ## Support
-For support, please contact [Support Contact Information].
+For support, please contact us here https://discord.gg/NUhqZXpjPq.
 
 ## Credits
-Developed by [Your Name] and [Friend's Name].
+Developed by Max and Eren.
 
 ## License
-[License Information]
+MIT License
 
