@@ -15,4 +15,4 @@ MonoBehaviour:
   _productionRate: 10
   _cost: 0
   _price: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: c3e14a2b9eed23746bd5504e3e50bf0d, type: 3}

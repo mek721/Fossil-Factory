@@ -17,6 +17,9 @@ public class Tile : MonoBehaviour
     public bool colliding;
     private bool isUsed = false;
 
+    public Quaternion _rotation;
+    public float rotationUsed = 1;
+
     void Start()
     {
         stateHolder = GameObject.FindObjectOfType<StateHolder>();
@@ -43,23 +46,31 @@ public class Tile : MonoBehaviour
 
     private void Update()
     {
-        if(colliding && !isUsed)
+        if (colliding && !isUsed)
         {
             if (Input.GetMouseButtonDown(0))
             {
-                isUsed = true;
-
                 switch (stateHolder.currentState)
                 {
                     case StateHolder.State.Printer:
-                        Instantiate(printer, transform.position, Quaternion.identity);
+                        Instantiate(printer, transform.position, _rotation);
                         break;
 
                     case StateHolder.State.ConveyorBelt:
-                        Instantiate(conveyorBelt, transform.position, Quaternion.identity);
+                        Instantiate(conveyorBelt, transform.position, _rotation);
                         break;
                 }
+
+                isUsed = true;
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            rotationUsed = (rotationUsed % 4) + 1; // Loop between 1 and 4
+
+            float rotationAngle = (rotationUsed - 1) * 90f;
+            _rotation = Quaternion.Euler(0f, 0f, rotationAngle);
         }
     }
 }

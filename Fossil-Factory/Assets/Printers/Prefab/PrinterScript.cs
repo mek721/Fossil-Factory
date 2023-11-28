@@ -28,7 +28,7 @@ public class PrinterScript : MonoBehaviour
         if (timer >= rate)
         {
             var fossil = Instantiate(fossils[Random.Range(0, 2)], transform.position, transform.rotation);
-            fossil.GetComponent<Rigidbody2D>().AddForce(Vector2.left * 10 * Time.deltaTime, ForceMode2D.Impulse);
+            fossil.GetComponent<Rigidbody2D>().AddForce(Vector2.left * 50 * Time.deltaTime, ForceMode2D.Impulse);
             timer = 0;
         }
     }
