@@ -157,8 +157,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 251951979
-  m_SortingLayer: 0
+  m_SortingLayerID: 807690363
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -187,8 +187,9 @@ MonoBehaviour:
   _offsetColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   _renderer: {fileID: 5543569060121406746}
   _highlight: {fileID: 396191929923413197}
-  printer: {fileID: 8351686083775679301, guid: 6ee08a7955ab79d4faf85880a8a7adb9, type: 3}
+  printer: {fileID: 4075123165659486681, guid: 54d0036223086e44fbd0866f934e5755, type: 3}
   conveyorBelt: {fileID: 8351686083775679301, guid: e63c3261c954d3145b923c69f35f440a, type: 3}
+  colliding: 0
 --- !u!61 &5608581438361961842
 BoxCollider2D:
   m_ObjectHideFlags: 0

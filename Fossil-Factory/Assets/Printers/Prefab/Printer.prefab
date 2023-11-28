@@ -98,4 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   so: {fileID: 11400000, guid: ef3eca348e5e3d34a85d7f3c299d66e0, type: 2}
-  fossils: {fileID: 4536257860653488049, guid: 4fd383392d8cb0d4aa1392408de2c727, type: 3}
+  fossils:
+  - {fileID: 4536257860653488049, guid: 4fd383392d8cb0d4aa1392408de2c727, type: 3}
+  - {fileID: 4536257860653488049, guid: 4fd383392d8cb0d4aa1392408de2c727, type: 3}
+  - {fileID: 4536257860653488049, guid: 4fd383392d8cb0d4aa1392408de2c727, type: 3}
