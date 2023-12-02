@@ -8,5 +8,6 @@ public class Printer : ScriptableObject
     public float _productionRate;
     public float _cost;
     public float _price;
+    public float _speed;
     public Sprite sprite;
 }

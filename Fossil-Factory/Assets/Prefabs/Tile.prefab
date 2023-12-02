@@ -188,8 +188,10 @@ MonoBehaviour:
   _renderer: {fileID: 5543569060121406746}
   _highlight: {fileID: 396191929923413197}
   printer: {fileID: 4075123165659486681, guid: 54d0036223086e44fbd0866f934e5755, type: 3}
-  conveyorBelt: {fileID: 8351686083775679301, guid: e63c3261c954d3145b923c69f35f440a, type: 3}
+  conveyorBelt: {fileID: 5689636736479790787, guid: 8a0ad5858661fc04c868b0a577c81274, type: 3}
   colliding: 0
+  _rotation: {x: 0, y: 0, z: 0, w: 0}
+  rotationUsed: 1
 --- !u!61 &5608581438361961842
 BoxCollider2D:
   m_ObjectHideFlags: 0

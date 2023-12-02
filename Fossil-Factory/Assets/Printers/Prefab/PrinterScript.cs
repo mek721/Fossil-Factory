@@ -9,6 +9,7 @@ public class PrinterScript : MonoBehaviour
     public GameObject[] fossils;
 
     private float rate;
+    public float speed;
     private float timer;
     private Sprite sprite;
 
@@ -17,6 +18,7 @@ public class PrinterScript : MonoBehaviour
     {
         rate = so._productionRate;
         sprite = so.sprite;
+        speed = so._speed;
         gameObject.GetComponent<SpriteRenderer>().sprite = sprite;
     }
 
@@ -27,8 +29,10 @@ public class PrinterScript : MonoBehaviour
 
         if (timer >= rate)
         {
+            Debug.Log("Spawned Fossil");
             var fossil = Instantiate(fossils[Random.Range(0, 2)], transform.position, transform.rotation);
-            fossil.GetComponent<Rigidbody2D>().AddForce(Vector2.left * 50 * Time.deltaTime, ForceMode2D.Impulse);
+            fossil.GetComponent<Rigidbody2D>().AddForce(-transform.right * speed * Time.deltaTime, ForceMode2D.Impulse);
+            fossil.tag = "Fossil";
             timer = 0;
         }
     }

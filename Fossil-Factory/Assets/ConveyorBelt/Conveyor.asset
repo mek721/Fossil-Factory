@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4db7804192cb8b46836faf8bdcf516a, type: 3}
-  m_Name: StarterPrinter
+  m_Script: {fileID: 11500000, guid: f508a7a65f22d8649848e748931ca91a, type: 3}
+  m_Name: Conveyor
   m_EditorClassIdentifier: 
-  _productionRate: 10
-  _cost: 0
-  _price: 0
-  _speed: 300
-  sprite: {fileID: 21300000, guid: c3e14a2b9eed23746bd5504e3e50bf0d, type: 3}
+  sprite: {fileID: 0}

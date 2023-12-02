@@ -53,11 +53,11 @@ public class Tile : MonoBehaviour
                 switch (stateHolder.currentState)
                 {
                     case StateHolder.State.Printer:
-                        Instantiate(printer, transform.position, _rotation);
+                        var printerVar = Instantiate(printer, transform.position, _rotation);
                         break;
 
                     case StateHolder.State.ConveyorBelt:
-                        Instantiate(conveyorBelt, transform.position, _rotation);
+                        var conveyorVar = Instantiate(conveyorBelt, transform.position, _rotation);
                         break;
                 }
 
